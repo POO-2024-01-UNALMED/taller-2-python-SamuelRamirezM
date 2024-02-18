@@ -19,7 +19,9 @@ class Auto():
         self.registro = registro
         
     def cantidadAsientos(self):
-        pass
+        for a in range(0, len(self.asientos)):
+            cantidadCreados += 1
+        return cantidadCreados
 
     def verificarIntegridad(self):
         if Motor.registro == Auto.registro and Motor.registro == Asiento.registro and Asiento.registro == Auto.registro:
