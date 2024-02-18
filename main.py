@@ -22,7 +22,7 @@ class Auto():
         pass
 
     def verificarIntegridad(self):
-        if Motor.registro == Auto.registro == Asiento.registro:
+        if Motor.registro == Auto.registro and Motor.registro == Asiento.registro and Asiento.registro == Auto.registro:
             return "Auto original"
         else:
             return "Las piezas no son originales"
